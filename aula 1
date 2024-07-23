@@ -1,0 +1,13 @@
+ <!-- Estrutura básica-->
+<!DOCTYPE html> <!-- para falar que é o tipo html-->
+<html>
+    <head> <!--Cabeçalho: navegador lê a tag sem mostrar para o usuário-->
+        <title>Meu site</title>
+    </head>
+    <body> <!--corpo do site: visível para o usuário-->
+        <h1> Segundo projeto de html do zero! </h1> <!--h1:título do conteúdo/p : conteúdo-->
+        <p> Conteúdo está sendo verificado </p> 
+    </body>
+
+    
+</html>
