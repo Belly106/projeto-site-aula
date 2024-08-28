@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="poa-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POA</title>
+</head>
+<body style="background-color: rgb(245, 164, 245)">
+    <h1>Pesquisa de satisfação</h1>
+    <hr> 
+    <br>
+    <form action="arquivo.php" method="get">
+
+        <label for="camponome">Nome completo: </label> <!--legenda-->
+        <input id="camponome" type="text"placeholder="Digite seu nome." required> <br> <br><!--input dado de entrada, onde possui vários tipos -->
+        <label for="campoemail"> Email: </label>
+        <input id="campoemail" type="email" placeholder="Digite seu email." required> <br> <br> <!--required torna o campo obrigatório-->
+        <label for="camposenha"> Senha: </label>
+        <input id="camposenha" type="password" placeholder="Digite uma senha." required> <br><br>
+
+        <select name="genero"> <!--selecionar opções / option é as opções / selected & disabled & o valor em branco deixa a opção 'desabilitada'-->
+            <option required selected disabled value="">Gênero</option>
+            <option required value="Feminino">Feminino</option>
+            <option required value="Masculino">Masculino</option>
+            <option required value="Não binário">Não binário</option>
+            <option required  value="Prefiro não dizer">Prefiro não dizer</option>
+        </select>
+
+        <h3 required> Insira uma nota de 0 a 5 para o site POA! </h3>
+        <input id="zero" type="checkbox" name="Nota" value="0"> <label for="zero"> 0 </label> <BR> <!--checkbox=multiescolha // radio = 1 opção-->
+        <input id="um" type="checkbox" name="Nota" value="1"> <label for="um"> 1 </label> <br>
+        <input id="dois" type="checkbox" name="Nota" value="2"> <label for="dois"> 2 </label> <br>
+        <input id="tres" type="checkbox" name="Nota" value="3"> <label for="tres"> 3 </label> <br>
+        <input id="quatro" type="checkbox" name="Nota" value="4"> <label for="quatro"> 4 </label> <br>
+        <input id="cinco" type="checkbox" name="Nota" value="5"> <label for="cinco"> 5 </label> <br><br>
+
+        <h3>Achou útil essa matéria?</h3>
+        <input required id="sim" type="radio" name="positivo" value="Sim"> <label for="sim"> Sim. </label> <br>
+        <input required id="não" type="radio" name="negativo" value="Não"> <label for="sim"> Não. </label> <br>
+        <input required id="maisoumenos" type="radio" name="naquelas" value="MaisouMenos"> <label for="maisoumenos"> Intermediário. </label> 
+            <br><br>
+
+        <h3>Deixe uma mensagem para nós</h3>
+        <textarea name="mensagem" placeholder="Escreva aqui!" rows="9" cols="30"></textarea>
+
+    
+       <br><br> <input type="submit"> <!--botão de enviar-->
+    </form>
+    <br>
+    <hr><br>
+    <a href="./index.html">Volte para a página inicial.</a>
+</body>
+</html>
